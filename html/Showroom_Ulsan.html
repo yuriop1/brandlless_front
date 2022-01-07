@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>쇼룸 안내</title>
+    <!--여기부터 -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+    <script> 
+    function initialize() {
+    var myLatlng = new google.maps.LatLng(35.53813048461706, 129.340168618777);
+    var mapOptions = {
+        zoom: 17, 
+        center: myLatlng
+    }
+
+    var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: '일산점'
+    });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	<link rel="stylesheet" href="./css/ban.css">
+	<link rel="stylesheet" href="./css/newCommon.css" />	
+    <style>
+	.con_data {width:calc(100% - 202px); clear:both; text-align: center;}
+    .vs { clear:both; width:900px; margin: 0 auto; }
+    .vs img { display:block; width: 100%; height:auto; }
+    .map_area { width: 600px; height: 400px; clear:both; margin:20px auto; position:relative; }
+    
+    .tit { clear: both; text-align: center; margin: 30px; } 
+    .tit2 { clear: both; text-align: center; margin-bottom: 30px; }  
+    .address { clear: both; text-align: center; font-size: 15px; margin-top: 30px; }
+    .all { clear: both; border: 1px solid #e6dfdf; margin-bottom: 40px; margin-left: 30%; margin-right: 30%; padding: 30px;}
+    
+       
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body onload="initialize()">
+    <div class="wrap">
+        <header class="hd">
+            <div class="hd_wrap">
+                <nav class="tnb">
+                    <ul class="left">
+                        <li><a href=""><strong>BRANDLESS</strong></a></li>
+                    </ul>
+                    <a href="main.html" class="logo"> <img src="./img/logob.jpg"
+                        alt="앰블럼이미지">
+                    </a>
+                    <ul class="right">
+                        <li><a href="login.html"><small>로그인</small></a></li>
+                        <li><a href="agreement.html"><small>회원가입</small></a></li>
+                        <li><a href="login.html"><small>마이페이지</small></a></li>
+                        <li><a href="mypage.html"><small>마이페이지</small></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hd_wrap">
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="main.html" class="dp1">home</a></li>
+                        <li><a href="Brandstory.html" class="dp1">Brand story</a></li>
+                        <li><a href="showRoom.html" class="dp1">쇼룸안내</a></li>
+                        <li><a href="gallery.html" class="dp1">갤러리</a></li>
+                        <li><a href="notice.html" class="dp1">공지사항</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <h2 class="tit">쇼룸 안내</h2>
+        <div class="all">
+        <h4 class="tit2">< 울산점 ></h4>
+            <div class="map_area">
+                <div id="map_canvas" style="width:600px; height:400px"></div>
+            </div> 
+            <div class="address">
+                <p class="address">
+                    울산광역시 남구 화합로 150<br>
+                    EZIP빌딩 7층<br>
+                    052-267-1553<br>
+                    010-9586-2407(영업시간중 응대가능)<br>
+                    월-일 11시-20시<br>
+                    주차 가능<br>
+                </p>
+            </div>  
+            <footer class="ft">
+                <div class="ft_wrap">
+                    <div class="row2">
+                           <nav class="ft_link">
+                               <ul>
+                                  <li><a href="main.html">HOME</a></li>
+                                  <li><a href="sub02.html">ABOUT US</a></li>
+                                  <li><a href="sub03.html">AGREEMENT</a></li>
+                                  <li><a href="sub04.html">PRIVACY POLICY</a></li>
+                                </ul>
+                                <div class="goto_top"><a href="">GOTO TOP ▲</a></div>	
+                           </nav>
+                       <div class="addr">
+                      <p>COMPANY :RNC Korea OWNER :서진원<br>
+                            ADDRESS : 06241 서울특별시 강남구 테헤란로4길 38-3 (역삼동) 다우빌딩 601호<br>
+                            BUSINESS LICENSE : [144-01-14252] ONLINE LICENSE 2012-경기성남-1076 [사업자정보확인]<br>
+                            TEL : 1522-7048 FAX : 02-538-7248 E-MAIL : brandless@naver.com<br>
+                            WORK TIME : 평일 : 08시-17시30분 주말/공휴일 휴무</p>
+                     </div>
+                              <p class="copyright">Copyright © 브랜드리스. All rights reserved.</p>
+                     </div>
+                </div>
+            </footer>
+        </div>
+	</div>
+</body>
+</html>

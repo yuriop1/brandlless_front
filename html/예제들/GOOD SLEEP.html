@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOD SLEEP</title>
+    <script src="./js/jquery.js"></script>
+    <style>
+    * { margin: 0; padding: 0; }
+    body, html { width: 100%; height: 100%;}
+    ul { list-style: none; }
+    a { text-decoration: none; }  
+    .wrap { width: 100%; }
+    .hd { width: 100%; background:#fff; height:120px;  
+     top: 0; left: 0; z-index:999; }
+    .hd_wrap { clear:both; width: 1000px; margin:0 auto; }  
+    .tnb { width: 100%; }
+    .tnb .left { float:left; }
+    .tnb .right { float:right; }
+    .tnb li { float:left; margin-top: 20px; }
+    .tnb .left li { margin-right: 20px; }
+    .tnb .right li { margin-left: 20px; }
+    .tnb li a { color:rgb(0, 0, 0); font-size:16px; }
+    .logo { display:block; position:absolute;  top:5px; left:50%; margin-left:-50px; }
+    .gnb { clear:both; width: 100%; }
+    .gnb > ul > li { float:left; margin-top: 36px; width: 20%; position:relative; 
+    }
+    .gnb li a.dp1 { display:block; height: 42px; line-height: 42px; color:#fff;
+    text-align:center; background-color:#222; }
+    .gnb li:hover a.dp1 { background-color:orange; }
+    .gnb li .sub { visibility:hidden; opacity:0; transition:0.5s; 
+    position:absolute; z-index:9999; width: 200px;  }
+    .gnb li:hover .sub { visibility: visible; opacity:1; }
+    .gnb .sub li { clear:both; height: 40px; line-height: 40px; }
+    .gnb .sub li a { display:block; height: 40px; line-height: 40px; color:#eee; background:rgba(22,22,22,0.8); padding-left:20px; }
+    .gnb .sub li:hover a { color:orange; }
+    </style>
+    <link rel="stylesheet" href="./css/ban.css">
+    <style>
+    /* 콘텐츠 스타일 */    
+    .content { clear:both; width: 100%; min-height:2000px; }    
+    </style>
+    
+    <style>
+    /* 푸터 스타일 */
+    .ft { background-color: rgb(163, 163, 163); color:rgb(61, 61, 61); width:100%; height: 100px; font-size: 12px;}
+    .ft_wrap { width: 1000px; margin: 0 auto; padding-top:15px; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="hd_wrap">
+                <nav class="tnb">
+                    <ul class="left">
+                        <li><a href=""><strong>GOOD SLEEP</strong></a></li>
+                    </ul>
+                    <a href="" class="logo">
+                        <img src="./img/logob.jpg" alt="앰블럼이미지">
+                    </a>
+                    <ul class="right">
+                        <li><a href=""><small>로그인</small></a></li>
+                        <li><a href=""><small>로그아웃</small></a></li>
+                        <li><a href=""><small>회원가입</small></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hd_wrap">
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="" class="dp1">GOOD SLEEP</a>
+                            <ul class="sub">
+                                <li><a href="">회사 소개</a></li>
+                                <li><a href="">대표 인사말</a></li>
+                                <li><a href="">지점 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="dp1">공지사항</a>
+                            <ul class="sub">
+                                <li><a href="">서브메뉴21</a></li>
+                                <li><a href="">서브메뉴22</a></li>
+                                <li><a href="">서브메뉴23</a></li>
+                                <li><a href="">서브메뉴24</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="dp1">상품 소개</a>
+                            <ul class="sub">
+                                <li><a href="">서브메뉴31</a></li>
+                                <li><a href="">서브메뉴32</a></li>
+                                <li><a href="">서브메뉴33</a></li>
+                                <li><a href="">서브메뉴34</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="dp1">게시판</a>
+                            <ul class="sub">
+                                <li><a href="">포토 갤러리</a></li>
+                                <li><a href="">질문과 답변</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="dp1">메인 메뉴</a>
+                            <ul class="sub">
+                                <li><a href="">서브메뉴51</a></li>
+                                <li><a href="">서브메뉴52</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content">
+            <figure class="vs">
+                <ul class="img_box">
+                    <li>
+                        <img src="./img/bed3.jpg" alt="bed3" class="vs_img">
+                    </li>
+                    <li>
+                        <img src="./img/bed2.jpg" alt="bed2" class="vs_img">
+                    </li>
+                    <li>
+                        <img src="./img/bed4.jpg" alt="bed4" class="vs_img">
+                    </li>
+                </ul>
+            </figure>
+            <script src="./js/ban.js"></script>
+        </div>
+        <footer class="ft">
+            <div class="ft_wrap">
+                <address>ADDRESS : 경기도 고양시 일산동구 중앙로1275번길 38-10</address>
+                <number>BUSINESS LICENSE : 111-22-33344</number>
+                <tel>TEL : 1234-5678</tel>> <fax>FAX : 02-123-4567</fax> <email>E-MAIL : goodsleep@naver.com</email>
+                <p time>WORK TIME : 평일 09:00~17:30, 주말/공휴일 휴무</p>
+                <p class="copyright">copyrights 2021. GOOD SLEEP Co. all rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

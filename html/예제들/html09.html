@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * { margin: 0; padding: 0}
+        body { font-family:sans-serif }
+        ul { list-style: none; }
+        a { text-decoration: none; }
+        doby, html { width: 100%; }
+        #header { clear:both; width: 100%; }
+        .tit { font-size: 48pt; color: red; }
+        .page_tit { color: deepskyblue; font-size: 32px; }
+        .item_tit { font-size: 48px; color: red; }
+        .img_lst ing { display: block; float: left; border-width: 5px; }
+        img[src] { width: 300px; height: 200px; }
+        img[src="abc.jpg"] { border-color: deepskyblue; border-style: solid; }
+        img[srd^="b"] { border:5px solid deeppink; border-style: dashed; }
+        img[src$="png"] {border-color: gold; }
+        img[src*="bc"] {width: 400px; }
+
+        .tnb a { color:#333; }
+        #topNavigationBar a { color:deeppink; }
+        .tnb a { color:deepskyblue; }
+        #topNavigationBar a { color:#333; }
+
+        .gnb > ul > li > a { font-size: 32px; }
+        .gnb li > a { color: #333; }
+        .gnb a { font-size: 60px; color: forestgreen; }
+
+        .first + li a { display: block; height: 30px; line-height: 30px; background-color: gold; color: #333; text-align: center; }
+        .first ~ li a { font-size: 40px; color:green; }
+        
+        .tnb a:first-child { display: block; width: 400px; height: 40px; border: 2px solid #333; }
+        .tnb a:last-child { display: block; width: 400px; height: 40px; border:2px solid rgb(141,224,33); }
+
+        a:link { border:3px solid red; }
+        .gnb a:visited { border:5px dashed blue; }
+        .gnb a:hover { color: #fff; background-color:#333; }
+        .gnb a:active { color: #fff; background-color:green; }
+
+        .ani_img { display: block; width: 100px; height: auto; border:4ps gold; transition: 0.8s; }
+        #ck1:checked + .ani_img { width: 400px; }
+
+        .song::first-line { color: red; }
+        .song::first-letter { font-size: 40px; }
+        #global a { border: 0; }
+        .gnb a::before, .gnb a::after { content: ""; clear:both; display: block; width: 1px; height: 3px; background-color: gold; margin: 0 auto; transition: 0.5s; }
+        .gnb a:hover::before, .gnb a:hover::after { width:200px; }
+        .song::selection { background-color: hotpink;}
+    </style>
+</body>
+</html>

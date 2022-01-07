@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시글 추가</title>
+	<link rel="stylesheet" href="./css/ban.css">
+	<link rel="stylesheet" href="./css/newCommon.css" />	
+<style>
+
+</style>
+</head>
+<body>
+<div class="wrap">
+	<header class="hd">
+		<div class="hd_wrap">
+			<nav class="tnb">
+				<ul class="left">
+					<li><a href=""><strong>BRANDLESS</strong></a></li>
+				</ul>
+				<a href="main.jsp" class="logo"> <img src="./img/logob.jpg"alt="앰블럼이미지"></a>
+				<ul class="right">
+					<li><a href="login.html"><small>로그인</small></a></li>
+					<li><a href="agreement.html"><small>회원가입</small></a></li>
+					<li><a href="login.html"><small>마이페이지</small></a></li>
+					<li><a href="mypage.html"><small>마이페이지</small></a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="hd_wrap">
+			<nav class="gnb">
+				<ul>
+					<li><a href="main.html" class="dp1">home</a></li>
+					<li><a href="Brandstory.html" class="dp1">Brand story</a></li>
+					<li><a href="showRoom.html" class="dp1">쇼룸안내</a></li>
+					<li><a href="gallery.html" class="dp1">갤러리</a></li>
+					<li><a href="notice.html" class="dp1">공지사항</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<h2 class="tit">상세 게시글 추가</h2>
+	<form action="" method="post" id="frm" name="frm">
+		<table class="tb">
+			<tbody>
+				<tr>
+					<th class="col_hd">
+						<label for="nid">글번호</label>
+					</th>
+					<td class="col_data">
+						<input type="text" id="nid" name="nid" class="in_data" value="" required readonly />
+					</td>
+				</tr>
+				<tr>
+					<th class="col_hd">
+						<label for="title" >제목</label>
+					</th>
+					<td class="col_data">
+						<input type="text" id="title" name="title" class="in_data"  required />
+					</td>
+				</tr>
+				<tr>
+					<th class="col_hd">
+						<label for="content">글 내용</label>
+					</th>
+					<td class="col_data">
+						<textarea id="content" name="content" class="in_data_area"  cols="60" rows="15" required>
+						</textarea>
+					</td>
+				</tr>
+				<tr>
+					<th class="col_hd">
+						<label for="author">작성자</label>
+					</th>
+					<td class="col_data">
+						<input type="text" id="author" name="author" class="in_data" value="관리자" required/>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr />
+		<div class="btn_wrap">	
+			<button type="submit" class="in_btn" onclick="">등록</button>
+			<button type="reset" class="in_btn" onclick="">취소</button>
+		</div>	
+	</form>
+	<footer class="ft">
+		<div class="ft_wrap">
+			<div class="row2">
+				<nav class="ft_link">
+					<ul>
+						<li><a href="main.html">HOME</a></li>
+						<li><a href="sub02.html">ABOUT US</a></li>
+						<li><a href="sub03.html">AGREEMENT</a></li>
+						<li><a href="sub04.html">PRIVACY POLICY</a></li>
+					</ul>
+					<div class="goto_top"><a href="">GOTO TOP ▲</a></div>	
+				</nav>
+			<div class="addr">
+			<p>COMPANY :RNC Korea OWNER :서진원<br>
+					ADDRESS : 06241 서울특별시 강남구 테헤란로4길 38-3 (역삼동) 다우빌딩 601호<br>
+					BUSINESS LICENSE : [144-01-14252] ONLINE LICENSE 2012-경기성남-1076 [사업자정보확인]<br>
+					TEL : 1522-7048 FAX : 02-538-7248 E-MAIL : brandless@naver.com<br>
+					WORK TIME : 평일 : 08시-17시30분 주말/공휴일 휴무</p>
+			</div>
+					<p class="copyright">Copyright © 브랜드리스. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
